@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="identitasdiri">
+      <h1>Aplikasi Operasi Aritmatika</h1>
+      <div>
+        <p>Nama : Kadek Agus Tamayasa</p>
+        <p>NIM : 2215101028</p>
+        <p>Kelas : A</p>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="container">
+        <h2 class="subjudul">Deret Fibonacci</h2>
+        <div class="inner-container">
+          <div class="input-n">
+            <p>Masukkan Deret ke-N :</p>
+            <input type="number" id="fibonacciInput" min="1" />
+            <button onclick="hitungFibonacci()">Hitung</button>
+            <p>Deret Fibonacci : <span id="fibonacci-Result"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 class="subjudul">Perhitungan Volume Bangun Ruang</h2>
+        <div class="inner-container">
+          <label for="bangun-ruang">Pilih Bangun Ruang</label>
+          <select name="bangun-ruang" id="bangun-ruang" class="bangun-ruang">
+            <option value="Balok">Balok</option>
+            <option value="Kubus">Kubus</option>
+            <option value="Bola">Bola</option>
+            <option value="Limas">Limas</option>
+            <option value="Tabung">Tabung</option>
+          </select>
+          <div class="input-volume">
+            <div id="input-balok">
+              <h3 class="judul-bangunan">Kalkulator Volume Balok</h3>
+              <label for="panjang-balok">Panjang Balok : </label>
+              <input type="number" name="panjang" id="panjang-balok" />
+              <label for="lebar-balok">Lebar Balok : </label>
+              <input type="number" name="lebar" id="lebar-balok" />
+              <label for="tinggi-balok">Tinggi Balok : </label>
+              <input type="number" name="tinggi" id="tinggi-balok" />
+              <button onclick="volumeBalok()">Hitung</button>
+              <p id="hasil-volume-balok"></p>
+            </div>
+
+            <div id="input-kubus">
+              <h3>Kalkulator Volume Kubus</h3>
+              <label for="sisi-kubus">Sisi Kubus : </label>
+              <input type="number" name="sisi" id="sisi-kubus" />
+              <button onclick="volumeKubus()">Hitung</button>
+              <p id="hasil-volume-kubus"></p>
+            </div>
+
+            <div id="input-bola">
+              <h3>Kalkulator Volume bola</h3>
+              <label for="jari-jari">Jari-Jari : </label>
+              <input type="number" name="jari-jari" id="jari-jari-bola" />
+              <button onclick="volumeBola()">Hitung</button>
+              <p id="hasil-volume-bola"></p>
+            </div>
+
+            <div id="input-limas">
+              <h3>Kalkulator Volume Limas</h3>
+              <label for="luas-alas">Luas Alas : </label>
+              <input type="number" name="luas-alas" id="luas-alas-limas" />
+              <label for="tinggi-limas">Tinggi Limas : </label>
+              <input type="number" name="tinggi-limas" id="tinggi-limas" />
+              <button onclick="volumeLimas()">Hitung</button>
+              <p id="hasil-volume-limas"></p>
+            </div>
+
+            <div id="input-tabung">
+              <h3>Kalkulator volume Tabung</h3>
+              <label for="jari-jari-tabung">Jari-Jari Tabung</label>
+              <input
+                type="number"
+                name="jari-jari-tabung"
+                id="jari-jari-tabung"
+              />
+              <label for="tinggi-tabung">Tinggi Tabung</label>
+              <input type="number" name="tinggi-tabung" id="tinggi-tabung" />
+              <button onclick="volumeTabung()">Hitung</button>
+              <p id="hasil-volume-tabung"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column; /* Change from row to column */
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.container {
+  flex: 1;
+  background-color: white;
+  flex-flow: column wrap;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 50px;
+  padding: 5px;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.container > * {
+  flex: 1;
+}
+
+.identitasdiri {
+  text-align: center;
+  width: 100%;
+  min-width: 300px;
+  background-color: #00b894;
+  padding: 5px;
+  margin: 0;
+  color: #fff;
+}
+
+.subjudul {
+  text-align: center;
+  padding: 5px;
+}
+
+.judul-bangunan {
+  margin-bottom: 25px;
+}
+
+.bangun-ruang {
+  width: auto;
+  padding: 10px;
+  margin-left: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-left: 25px;
+  justify-content: center;
+}
+
+.input-volume,
+.input-n {
+  width: auto;
+  margin: 30px;
+  padding: auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 18px;
+}
+
+button {
+  background-color: #05c46b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #009e60;
+}
+
+#input-kubus {
+  display: none;
+}
+#input-balok {
+  display: none;
+}
+#input-bola {
+  display: none;
+}
+#input-limas {
+  display: none;
+}
+#input-tabung {
+  display: none;
+}
+
+@media screen and (max-width: 1366px) {
+  .container {
+    max-width: 100%;
+    margin: 10px;
+    margin-top: 20px;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    margin: 5px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .identitasdiri {
+    font-size: 75%;
+  }
+
+  .subjudul {
+    font-size: 21px;
+  }
+
+  .judul-bangunan {
+    font-size: 18px;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 18px;
+    font-size: 16px;
+  }
+}
